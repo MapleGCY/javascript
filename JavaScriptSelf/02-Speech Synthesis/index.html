@@ -2,29 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Speech Synthesis</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css" />
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="voiceinator">
+    <div class="box">
       <h1>The Voiceinator 5000</h1>
-
-      <select name="voice" id="voices">
-        <option value="">Select A Voice</option>
+      <select name="voice">
+        <option value="Select A Voice">Select A Voice</option>
       </select>
 
-      <label for="rate">Rate:</label>
-      <input name="rate" type="range" min="0" max="3" value="1" step="0.1" />
+      <labal for="Rate">Rate:</labal>
+      <input type="range" name="" id="Rate" min="0" max="3" value="1" step="0.1" />
 
-      <label for="pitch">Pitch:</label>
+      <labal for="Pitch">Pitch:</labal>
+      <input type="range" name="" id="Pitch" min="0" max="2" value="1" step="0.1" />
 
-      <input name="pitch" type="range" min="0" max="2" step="0.1" />
-      <textarea name="text">Hello! I love JavaScript 👍</textarea>
+      <textarea name="text" id="" cols="30" rows="10">Hello! I love JavaScript 👍</textarea>
+
       <button id="stop">Stop!</button>
       <button id="speak">Speak</button>
     </div>
-
     <script>
       const msg = new SpeechSynthesisUtterance()
       let voices = []

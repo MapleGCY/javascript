@@ -14,8 +14,8 @@ body {
   padding: 0;
   font-family: sans-serif;
   background-color: #3bc1ac;
-  display: flex;
   min-height: 100vh;
+  display: flex;
   align-items: center;
 
   background-image: radial-gradient(
@@ -99,15 +99,15 @@ body {
   background-size: 100px 50px;
 }
 
-.voiceinator {
-  padding: 2rem;
-  width: 50rem;
+.box {
   margin: 0 auto;
-  border-radius: 1rem;
+  padding: 2em;
+  width: 50rem;
+  background-color: #fff;
   position: relative;
-  background: white;
   overflow: hidden;
   z-index: 1;
+  border-radius: 1rem;
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -115,34 +115,34 @@ h1 {
   width: calc(100% + 4rem);
   margin: -2rem 0 2rem -2rem;
   padding: 0.5rem;
-  background: #ffc600;
-  border-bottom: 5px solid #f3c010;
   text-align: center;
+  background-color: #ffc600;
+  border-bottom: 5px solid #f3c010;
   font-size: 5rem;
-  font-weight: 100;
+  font-weight: 100%;
   font-family: 'Pacifico', cursive;
   text-shadow: 3px 3px 0 #f3c010;
 }
 
-.voiceinator input,
-.voiceinator button,
-.voiceinator select,
-.voiceinator textarea {
-  width: 100%;
+.box input,
+.box button,
+.box select,
+.box textarea {
   display: block;
-  margin: 10px 0;
+  width: 100%;
   padding: 10px;
+  margin: 10px 0;
   border: 0;
   font-size: 2rem;
   background: #f7f7f7;
   outline: 0;
 }
 
-textarea {
+.box textarea {
   height: 20rem;
 }
 
-.voiceinator button {
+.box button {
   background: #ffc600;
   border: 0;
   width: 49%;
@@ -155,10 +155,10 @@ textarea {
   position: relative;
 }
 
-.voiceinator button:active {
+.box button:active {
   top: 2px;
 }
 
-.voiceinator button:nth-of-type(1) {
+.box button:nth-of-type(1) {
   margin-right: 2%;
 }
